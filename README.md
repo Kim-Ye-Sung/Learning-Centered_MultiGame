@@ -16,6 +16,8 @@
 <img width="944" height="218" alt="복제 변수 설정" src="https://github.com/user-attachments/assets/e7a5425b-3e19-4771-afb0-3ae9c9d14201" />
 
 
+
+    
 2. 서버RPC를 사용하여 서버쪽에서 변수를 바꿀수 있게끔 한다.
 <img width="1116" height="75" alt="서버RPC선언" src="https://github.com/user-attachments/assets/baef091c-688f-403d-a568-3f11f4d070f4" />
 <img width="1116" height="400" alt="앉기 RPC 코드" src="https://github.com/user-attachments/assets/f26d1110-08ef-4119-9aba-c44cd5c9c6b8" />
