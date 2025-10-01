@@ -43,9 +43,17 @@
 <img width="402" height="79" alt="밀리어택 넷멀티rpc" src="https://github.com/user-attachments/assets/67d50991-525a-4527-a342-00d1ca7e03e8" />
 <img width="1047" height="265" alt="밀리어택 넷멀티rpc 코드" src="https://github.com/user-attachments/assets/2474a932-ce74-4994-9aa8-f77c99e8737b" /><br><br>
 
-2. NetMulticastRPC는 서버쪽에서 실행해야 한다. 따라서 NetMulticastRpc를 실행할 서버RPC를 선언하고 정의한다.
+2. NetMulticastRPC는 서버쪽에서 실행해야 한다. 따라서 NetMulticastRpc를 실행할 서버RPC를 선언하고 정의한다.  
+NetMulticastRPC는 서버RPC와는 다르게 서버와 클라이언트 양쪽 모두에서 실행되는 함수이다.
 <img width="691" height="69" alt="밀리어택 서버rpc" src="https://github.com/user-attachments/assets/fce39560-850a-48cc-abd2-401437bf57bb" />
-<img width="1230" height="247" alt="밀리어택 서버rpc 코드" src="https://github.com/user-attachments/assets/f79e6d8a-1f84-477f-8e1d-b04ee45dfe5d" />
+<img width="1230" height="247" alt="밀리어택 서버rpc 코드" src="https://github.com/user-attachments/assets/f79e6d8a-1f84-477f-8e1d-b04ee45dfe5d" /><br><br>
 
+3. 공격 키를 누르면 서버RPC를 실행할 수 있게끔 서버RPC를 바인딩한다.
+<img width="1368" height="353" alt="밀리어택 바인딩" src="https://github.com/user-attachments/assets/0f40d0db-908f-4295-9ed3-3f68dd209d06" /><br><br>
 
+<결과>
+클라이언트가 공격 키를 누르면 서버와 다른 클라이언트에서도 공격 모션을 실행하는 것을 확인할 수 있다.  
+다시 순서대로 정리해보자면 클라이언트가 공격 키를 누르면 서버RPC가 실행되고, 그 서버RPC의 내용은 NetMulticastRPC를 실행하는것이다.  
+NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로 서버와 모든 클라이언트에서 공격 모션이 동시에 실행되는 것이다.
+![근접공격](https://github.com/user-attachments/assets/297f7717-0a85-433d-9c4c-02184cfe61af)
 
