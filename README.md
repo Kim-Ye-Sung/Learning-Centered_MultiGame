@@ -60,12 +60,21 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 ## 인터페이스를 이용한 상호작용
 멀티게임에서도 다른 오브젝트와 상호작용을 할 수 있다.  
 이때, 상호작용했다는것을 다른 플레이어도 볼 수 있게 하려고한다.  
-또한 상호작용 가능한 오브젝트를 여러개 만들기 위해 인터페이스를 사용한다.  
+또한 상호작용 가능한 오브젝트를 여러 종류 만들기 위해 인터페이스를 사용한다.  
 
 1. 인터페이스 헤더파일을 작성한다.
 <img width="1062" height="475" alt="인터페이스 헤더파일" src="https://github.com/user-attachments/assets/61c9fa20-457b-4315-89ea-667561a5387e" /><br><br>
 
-2. 인터페이스 함수를 사용할 다른 액터 클래스에서 인터페이스를 상속받아 구현한다.
+2. 인터페이스 함수를 사용할 다른 액터 클래스에서 인터페이스를 상속받아 구현한다.  
    또한 복제 변수 선언 및 인터페이스 함수 재정의를 위한 선언등을 한다.
 <img width="998" height="84" alt="인터페이스 상속 받음" src="https://github.com/user-attachments/assets/86d6836a-eed4-46bc-aae1-5ea74632e1dd" />
 <img width="912" height="283" alt="인터페이스 박스 헤더파일" src="https://github.com/user-attachments/assets/e351847b-94de-4751-82ec-a83d13e6c657" /><br><br>
+
+3. 다른 클라이언트에서도 확인 가능하도록 생성자에서 액터를 복제할 수 있게 해준다.
+<img width="1236" height="281" alt="인터페이스 박스 생성자" src="https://github.com/user-attachments/assets/ae935a7c-a706-4ea9-afd6-d859b6a7e603" /><br><br>
+
+4. 인터페이스 함수를 재정의하며, 그로인해 오브젝트가 해야할 상호작용을 정의한다.
+<img width="801" height="206" alt="인터페이스 박스 함수 구현" src="https://github.com/user-attachments/assets/5ed26da1-6d80-4226-8372-0120dd3446a7" />
+<img width="968" height="170" alt="인터페이스 박스 틱" src="https://github.com/user-attachments/assets/bc018685-a528-4ff8-97ae-10c4f9758169" /><br><br>
+
+
