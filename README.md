@@ -77,4 +77,23 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 <img width="801" height="206" alt="인터페이스 박스 함수 구현" src="https://github.com/user-attachments/assets/5ed26da1-6d80-4226-8372-0120dd3446a7" />
 <img width="968" height="170" alt="인터페이스 박스 틱" src="https://github.com/user-attachments/assets/bc018685-a528-4ff8-97ae-10c4f9758169" /><br><br>
 
+5. 플레이어측에서 오브젝트의 인터페이스 함수를 실행할 서버RPC 코드를 선언 및 정의한다.
+<img width="1088" height="97" alt="상호작용 서버rpc 선언" src="https://github.com/user-attachments/assets/a3948de9-ab82-463a-a5f7-67833a155869" />
+<img width="1046" height="104" alt="상호작용 서버RPC 코드" src="https://github.com/user-attachments/assets/c05aba1e-df1b-4c86-82a1-9676c302d96f" /><br><br>
+
+6. 플레이어측에서 상호작용을 위한 라인트레이스 함수를 선언 및 정의한다.
+   이때, 함수의 내용은 클라이언트측에서 카메라를 기준으로 라인트레이스를 실행했을때 충돌한 오브젝트가 인터페이스를 구현한 오브젝트인지를 판단하고  
+   5번 과정에서 정의하였던 서버RPC를 실행하여 오브젝트가 가진 인터페이스 함수를 실행한다는 것이 함수의 내용이다.  
+   그런데 어째서 서버RPC를 바로 실행하지 않고 라인트레이스를 클라이언트측에서 실행하냐고 하면 서버RPC를 무분별하게 사용하면  
+   네트워크 트래픽이 증가하여 서버의 성능이 저하되기 때문이다.  
+   따라서 서버가 판단하는게 심판의 역할로서는 좋을수도 있지만 게임에 영향을 끼치지 않는다면 클라이언트측에서 자체적으로 판단하고 그에따라 서버RPC를 실행하는것이 좋을수도 있다.
+<img width="1026" height="44" alt="상호작용 트레이스 함수 선언" src="https://github.com/user-attachments/assets/bf938234-5da4-45b0-8b53-39be5fce56f0" />
+<img width="1208" height="309" alt="상호작용 트레이스 코드" src="https://github.com/user-attachments/assets/3ced6256-b009-4b9e-8b2f-bdd8fab4098c" /><br><br>
+
+7. 상호작용 키를 누르면 라인트레이스 함수를 실행할 수 있게끔 라인트레이스 함수를 바인딩한다.
+<img width="1351" height="347" alt="상호작용 바인딩" src="https://github.com/user-attachments/assets/946d63c6-bbab-435a-ae3a-e749ed0eb4bf" /><br><br>
+
+<결과>
+클라이언트측에서 카메라로 오브젝트를 바라보고 상호작용키를 누르면 서버와 다른 클라이언트에서도 상호작용하는 오브젝트가 회전하는 것을 확인할 수 있다.
+![인터페이스](https://github.com/user-attachments/assets/91ebb415-cc87-49bb-ae39-aa5709dbb151)
 
