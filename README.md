@@ -95,5 +95,13 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 
 <결과>
 클라이언트측에서 카메라로 오브젝트를 바라보고 상호작용키를 누르면 서버와 다른 클라이언트에서도 상호작용하는 오브젝트가 회전하는 것을 확인할 수 있다.
-![인터페이스](https://github.com/user-attachments/assets/91ebb415-cc87-49bb-ae39-aa5709dbb151)
+![인터페이스](https://github.com/user-attachments/assets/91ebb415-cc87-49bb-ae39-aa5709dbb151)<br><br>
 
+---
+---
+### 현재 진행 상황
+약간의 총기 기능 구현과 함께 플레이어 캐릭터와 결합하여 공격 키를 누르면 공격 기능을 실행한다.  
+만약 총으로 공격한 대상이 Enemy오브젝트라면 데미지를 입히는 기능을 실행한다.  
+다음 사진으로 총기로 공격 기능을 실행하면 "Attack","Fire"라는 디버그 로그를 확인할 수 있으며,  
+대상이 Enemy오브젝트이면 Enemy가 가지고 있는 기능을 실행하여 "TakeDamage"라는 디버그 로그를 확인할 수 있다.
+![총쏘기](https://github.com/user-attachments/assets/1edc2583-84f0-480c-a70f-436aa9eaabf7)
