@@ -25,4 +25,8 @@
 <img width="1219" height="229" alt="앉기 OnRep" src="https://github.com/user-attachments/assets/02ff7820-7782-443d-a825-dfe9fea2a856" /><br><br>
 
 4. 앉기 키를 누르면 서버RPC를 실행할 수 있게끔 서버RPC를 바인딩한다.
-<img width="1372" height="349" alt="크라우치 바인딩" src="https://github.com/user-attachments/assets/60f14826-807a-4629-a468-4138118bad14" />
+<img width="1372" height="349" alt="크라우치 바인딩" src="https://github.com/user-attachments/assets/60f14826-807a-4629-a468-4138118bad14" /><br><br>
+
+<결과>
+클라이언트가 앉기 키를 누르면 서버와 다른 클라이언트에서도 앉기 속도로 동기화되어 이동하는 것을 확인할 수 있다.
+![정상이동](https://github.com/user-attachments/assets/bca6c457-71a1-4d8d-b9b6-414183340a6b)
