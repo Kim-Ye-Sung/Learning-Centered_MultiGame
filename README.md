@@ -37,9 +37,9 @@
 따라서 굳이 변수를 복제하여서 상태를 바꾸고 공격 애니메이션 실행후, 다시 애니메이션 실행할수 있게끔 변수를 바꾸고 복제하는 것은 다소 비효율적이다.
 이러한 경우는 서버RPC와 NetMulticastRPC를 조합하여 일회성으로 애니메이션을 한번만 실행하고 끝내는 것이 효율적이다.
 
-1. 공격 애니메이션을 실행할 NetMulticastRPC를 선언하고 정의한다.
-   여기서는 공격과 관련한 중요한 모션이기에 Reliable로 선언해주었지만 보통은 게임플레이시 있으면 좋지만 없다고해서 게임 진행에 영향을 주지 않는
-   사운드 및 MuzzleEffect같은 것에 사용함으로 Unreliable로 많이 선언한다.
+1. 공격 애니메이션을 실행할 NetMulticastRPC를 선언하고 정의한다.  
+   여기서는 공격과 관련한 중요한 모션이기에 Reliable로 선언해주었지만  
+   보통은 게임플레이시 있으면 좋지만 없다고해서 게임 진행에 영향을 주지 않는 사운드 및 MuzzleEffect같은 것에 사용함으로 Unreliable로 많이 선언한다.
 <img width="402" height="79" alt="밀리어택 넷멀티rpc" src="https://github.com/user-attachments/assets/67d50991-525a-4527-a342-00d1ca7e03e8" />
 <img width="1047" height="265" alt="밀리어택 넷멀티rpc 코드" src="https://github.com/user-attachments/assets/2474a932-ce74-4994-9aa8-f77c99e8737b" />
 
