@@ -110,3 +110,4 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 ![총쏘기](https://github.com/user-attachments/assets/1edc2583-84f0-480c-a70f-436aa9eaabf7)<br><br>
 
 ## 캐릭터 스킬1
+구상중인 캐릭터 스킬중의 하나로서 기존 공격 기능은 총을 쏘는 것이었지만, 스킬을 시전하면 칼을 뽑고 스킬 시전중에는 공격 기능이 칼을 휘두르는 기능으로 변경된다.
