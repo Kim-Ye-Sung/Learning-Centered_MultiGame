@@ -117,9 +117,22 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 <img width="1141" height="468" alt="칼 뽑기" src="https://github.com/user-attachments/assets/23194e04-a432-4cd9-bb44-9e80b1afa804" /><br><br>
 
 2. 칼을 뽑았다면 칼이 손으로 옮겨가야한다. 이러한 기능은 손이 칼 손잡이를 잡을때 옮겨가면 자연스러울 것이다.<br>
-따라서 몽타주의 특정 시점에 노티파이를 실행하여 자연스럽게 칼을 손으로 옮긴다.
-노티파이를 이용한 기능들은 빠르게 애니메이션 블루프린트에서 실행해주었다.
+따라서 몽타주의 특정 시점에 노티파이를 실행하여 자연스럽게 칼을 손으로 옮긴다.<br>
+이 외에도 무기 상태 변경같은 기능들도 노티파이를 이용하였으며, 노티파이를 이용한 기능들은 빠르게 애니메이션 블루프린트에서 실행해주었다.
 <img width="947" height="326" alt="몽타주 노티파이" src="https://github.com/user-attachments/assets/69f473e7-bf5e-46f5-a415-15e42de79ac5" /><br>
-<img width="648" height="298" alt="노티파이로 칼 손으로 옮기기" src="https://github.com/user-attachments/assets/9dae30af-c76d-4788-9d2d-7b3916e0285d" />
+<img width="648" height="298" alt="노티파이로 칼 손으로 옮기기" src="https://github.com/user-attachments/assets/9dae30af-c76d-4788-9d2d-7b3916e0285d" /><br><br>
+
+3. 기존의 캐릭터 공격기능을 이 캐릭터에 맞게 사용하기 함수를 override하여 재정의 하였다.<br>
+칼을 뽑았을 때에만 칼 공격을 실행하도록 함수를 정의하였다.
+<img width="1223" height="223" alt="공격 키 누름" src="https://github.com/user-attachments/assets/1a1c0149-da56-44eb-8521-c75bef912e61" /><br><br>
+
+4. 칼을 휘둘렀을때 횡베기, 종베기 두가지 모션이 번갈아가면서 나올 수 있도록 함수를 정의한다.
+<img width="1016" height="445" alt="칼 휘두르기" src="https://github.com/user-attachments/assets/41c31212-18e2-4d55-a681-1613b628225f" /><br><br>
+
+5. 칼에 달아두었던 BoxComponent를 이용하여 데미지 판정을 한다.<br>
+데미지 판정으로는 BoxComponent와 BeginOverlap시의 물체가 적 오브젝트라면 데미지를 준다.
+이때 근접하여 공격하기에 BeginOverlap이 여러번 발생할수 있기에 한번 칼을 휘두를때 이미 데미지를 줬던 적이라면 중복으로 피해를 입지 않게끔 배열에 담아서 확인한다.
+<img width="1220" height="423" alt="데미지 판정" src="https://github.com/user-attachments/assets/7ef565a5-71f1-4918-b1cd-9ef4cd7997d6" /><br><br>
+
 
 
