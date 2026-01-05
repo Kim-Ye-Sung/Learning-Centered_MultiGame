@@ -130,8 +130,9 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 <img width="1016" height="445" alt="칼 휘두르기" src="https://github.com/user-attachments/assets/41c31212-18e2-4d55-a681-1613b628225f" /><br><br>
 
 5. 칼에 달아두었던 BoxComponent를 이용하여 데미지 판정을 한다.<br>
-데미지 판정으로는 BoxComponent와 BeginOverlap시의 물체가 적 오브젝트라면 데미지를 준다.
-이때 근접하여 공격하기에 BeginOverlap이 여러번 발생할수 있기에 한번 칼을 휘두를때 이미 데미지를 줬던 적이라면 중복으로 피해를 입지 않게끔 배열에 담아서 확인한다.
+데미지 판정으로는 BoxComponent와 BeginOverlap시의 물체가 적 오브젝트라면 데미지를 준다.<br>
+이때 근접하여 공격하기에 BeginOverlap이 여러번 발생할수 있기에 한번 칼을 휘두를때 이미 데미지를 줬던 적이라면 중복으로 피해를 입지 않게끔 배열에 담아서 확인한다.<br>
+칼을 한번 휘두르고 나면 다음에 칼을 휘두를때는 다시 데미지를 줄 수 있도록 횡베기 및 종베기 몽타주에서 노티파이로 배열을 비우는 함수를 실행한다.
 <img width="1220" height="423" alt="데미지 판정" src="https://github.com/user-attachments/assets/7ef565a5-71f1-4918-b1cd-9ef4cd7997d6" /><br><br>
 
 
