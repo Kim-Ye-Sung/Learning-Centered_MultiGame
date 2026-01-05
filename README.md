@@ -135,5 +135,10 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 칼을 한번 휘두르고 나면 다음에 칼을 휘두를때는 다시 데미지를 줄 수 있도록 횡베기 및 종베기 몽타주에서 노티파이로 배열을 비우는 함수를 실행한다.
 <img width="1220" height="423" alt="데미지 판정" src="https://github.com/user-attachments/assets/7ef565a5-71f1-4918-b1cd-9ef4cd7997d6" /><br><br>
 
+<결과>
+스킬 키를 누르면 등에 달려있던 칼이 자연스럽게 손으로 옮겨가며, 공격키를 누를때마다 횡베기와 종베기를 번갈아가면서 실행하는 것을 확인할 수 있다.
+![베기편집](https://github.com/user-attachments/assets/669efd18-1ea2-4a65-bfeb-b9060c7a1755)
+
+
 
 
