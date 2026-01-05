@@ -142,11 +142,11 @@ NetMulticastRPC는 서버와 클라이언트 양쪽 모두에서 실행되므로
 ![베기편집](https://github.com/user-attachments/assets/669efd18-1ea2-4a65-bfeb-b9060c7a1755)<br><br>
 
 
-##UI관련 문제 해결
+## UI관련 문제 해결
 플레이어의 UI(체력이나 미니맵등)는 자기 자신한테만 보여야만한다.<br>
 그러나 BeginPlay에서 UI를 생성하고 체력이 줄어드는 상황에서 클라이언트1이 피격을 당했는데, 이상하게도 클라이언트2나 서버의 체력바가 줄어들었다.<br>
 그 이유는 BeginPlay 함수에 의해서 서버나 클라이언트들에서 모든 캐릭터들을 생성할 때, 각 캐릭터 인스턴스별로 BeginPlay가 실행이 되어서 모든 캐릭터 인스턴스의 UI가 생성되었기 때문이다.<br>
-즉, 게임에 캐릭터가 3명이 존재한다고 한다면 UI가 3개가 생성되어 겹쳐진 것이다. 
+즉, 게임에 캐릭터가 3명이 존재한다고 한다면 UI가 3개가 생성되어 겹쳐진 것이다. <br>
 따라서 이러한 문제점을 해결하기 위해 플레이어 자신만의 UI 하나만 나오도록 하려면 조건문으로 IsLocallyControlled() 함수를 사용하여 캐릭터가 플레이어가 컨트롤하는 캐릭터인지 확인하여야 한다.
 <img width="1283" height="485" alt="로컬리콘트롤드" src="https://github.com/user-attachments/assets/fe5c4b41-5180-4f45-a13d-5cbecc3ef40d" />
 
