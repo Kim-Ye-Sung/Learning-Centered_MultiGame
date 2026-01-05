@@ -14,7 +14,7 @@
 
 <img width="1147" height="87" alt="캐릭터 스테이트 변수" src="https://github.com/user-attachments/assets/d071f952-b592-4e1e-b308-8b8ca0212935" />
 
-<img width="944" height="218" alt="복제 변수 설정" src="https://github.com/user-attachments/assets/e7a5425b-3e19-4771-afb0-3ae9c9d14201" /><br><br>
+<img width="980" height="129" alt="복제 변수 등록" src="https://github.com/user-attachments/assets/27e1c57e-5148-4556-b4ef-4d9547e6e626" /><br><br>
 
 2. 서버RPC를 사용하여 서버쪽에서 변수를 바꿀수 있게끔 한다.  
 서버RPC로 실행한 함수는 서버쪽에서만 실행되고 클라이언트한테는 실행되지 않는다는것을 기억해둔다.  
