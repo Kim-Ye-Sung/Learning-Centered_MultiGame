@@ -18,11 +18,11 @@
 
 2. 무작정 서버RPC부터 실행을 해버리면 네트워크 트래픽에 부담이 갈 수 있다.
 따라서 클라이언트에서 서버와 동기화 되어 있는 복제 변수를 활용하여 일반함수에서 조건에 충족했을때만 서버RPC를 호출하도록 한다.<br>
-서버RPC를 실행하면 서버쪽에서 복제 변수를 변경할 수 있도록 한다.
-서버RPC로 실행한 함수는 서버쪽에서만 실행되고 클라이언트한테는 실행되지 않는다는것을 기억해둔다.  
+서버RPC를 실행하면 서버쪽에서 복제 변수를 변경할 수 있도록 한다.<br>
+서버RPC로 실행한 함수는 서버쪽에서만 실행되고 클라이언트한테는 실행되지 않는다는것을 기억해둔다.<br>  
 따라서 현재 상황에서는 서버RPC로 인해 서버에 있는 클라이언트 캐릭터 인스턴스의 속도만 변경되며, 복제변수가 클라이언트들한테 복제된다.
-<img width="1116" height="75" alt="서버RPC선언" src="https://github.com/user-attachments/assets/baef091c-688f-403d-a568-3f11f4d070f4" />
-<img width="1116" height="400" alt="앉기 RPC 코드" src="https://github.com/user-attachments/assets/f26d1110-08ef-4119-9aba-c44cd5c9c6b8" /><br><br>
+<img width="1066" height="111" alt="앉기 함수 선언" src="https://github.com/user-attachments/assets/6f29e7bd-fa21-442e-8289-8d91a359fda3" /><br><br>
+<img width="1337" height="492" alt="앉기 함수들 정의" src="https://github.com/user-attachments/assets/c9cec0fd-8e55-40d3-ac8d-6a72ba092c4f" /><br><br>
 
 4. 1번 과정에서 복제변수에 지정해두었던 함수를 정의함으로서 서버에서만 바뀌었던 속도를 클라이언트들도 똑같이 바뀌게 해준다.
 <img width="1219" height="229" alt="앉기 OnRep" src="https://github.com/user-attachments/assets/02ff7820-7782-443d-a825-dfe9fea2a856" /><br><br>
