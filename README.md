@@ -24,11 +24,13 @@
 <img width="1066" height="111" alt="앉기 함수 선언" src="https://github.com/user-attachments/assets/6f29e7bd-fa21-442e-8289-8d91a359fda3" /><br>
 <img width="1337" height="492" alt="앉기 함수들 정의" src="https://github.com/user-attachments/assets/c9cec0fd-8e55-40d3-ac8d-6a72ba092c4f" /><br><br>
 
-4. 1번 과정에서 복제변수에 지정해두었던 함수를 정의함으로서 서버에서만 바뀌었던 속도를 클라이언트들도 똑같이 바뀌게 해준다.
-<img width="1219" height="229" alt="앉기 OnRep" src="https://github.com/user-attachments/assets/02ff7820-7782-443d-a825-dfe9fea2a856" /><br><br>
+3. 1번 과정에서 복제 변수에 지정해두었던 함수를 정의함으로서 변수가 변경이되면 자동으로 실행이 되어 서버에서만 바뀌었던 캐릭터 속도를 클라이언트들도 똑같이 바뀌게 해준다.
+<img width="1026" height="470" alt="OnRep으로 속도 변경" src="https://github.com/user-attachments/assets/bec775e3-0462-4634-ab1c-0a225d448993" /><br><br>
 
-5. 앉기 키를 누르면 서버RPC를 실행할 수 있게끔 서버RPC를 바인딩한다.
-<img width="1372" height="349" alt="크라우치 바인딩" src="https://github.com/user-attachments/assets/60f14826-807a-4629-a468-4138118bad14" /><br><br>
+
+4. 앉기 키를 누르면 기능을 실행할 수 있게끔 정의해 두었던 일반함수를 바인딩한다.
+<img width="1267" height="500" alt="함수 바인딩2" src="https://github.com/user-attachments/assets/6f58b488-5650-436b-8693-ff8a135d4fb8" /><br><br>
+
 
 <결과>  
 클라이언트가 앉기 키를 누르면 서버와 다른 클라이언트에서도 앉기 속도로 동기화되어 이동하는 것을 확인할 수 있다.
